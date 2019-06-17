@@ -9,7 +9,7 @@ const siteContent = {
     "img-src": "img/logo.png"
   },
   "cta": {
-    "h1": "DOM Is Awesome",
+    "h1": "DOM\n Is\n Awesome",
     "button": "Get Started",
     "img-src": "img/header-img.png"
   },
@@ -40,3 +40,22 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// header section
+
+
+// cta section
+
+let ctaTitle = document.querySelector(".cta-text h1");
+ctaTitle.textContent = siteContent["cta"]["h1"];
+ctaTitle.style.whiteSpace = "pre-line";
+
+let ctaImg = document.getElementById("cta-img");
+ctaImg.src = siteContent["cta"]["img-src"];
+
+let ctaButton = document.querySelector(".cta-text button");
+ctaButton.textContent = siteContent["cta"]["button"];
+
+// contact section
+
+// footer section
