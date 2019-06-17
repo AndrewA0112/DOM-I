@@ -119,3 +119,6 @@ let contactEmail = document.querySelector(".contact p:nth-child(4)")
 contactEmail.textContent = siteContent["contact"]["email"];
 
 // footer section
+
+let footerPara = document.querySelector("footer p");
+footerPara.textContent = siteContent["footer"]["copyright"];
