@@ -43,6 +43,12 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 // header section
 
+let navLength = Object.keys(siteContent["nav"]).length
+
+for(let i = 1; i < navLength; i++){
+let navBar = document.querySelector(`nav a:nth-child(${i})`)
+navBar.textContent = siteContent["nav"][`nav-item-${i}`]
+}
 
 // cta section
 
@@ -55,6 +61,10 @@ ctaImg.src = siteContent["cta"]["img-src"];
 
 let ctaButton = document.querySelector(".cta-text button");
 ctaButton.textContent = siteContent["cta"]["button"];
+
+// main-content section
+
+
 
 // contact section
 
