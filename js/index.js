@@ -55,12 +55,15 @@ navBefore.textContent = 'Prepend';
 
 let navAfter = document.createElement('a')
 navAfter.textContent = 'Append';
+navAfter.href = ('/stretch-assignment/digital_timer/index.html')
+navAfter.target = ('_blank')
 
 let navBar = document.querySelector('nav');
 navBar.prepend(navBefore);
 navBar.append(navAfter);
 
 let navBarItemsColor = Array.from(document.querySelectorAll("a"))
+console.log(document.querySelectorAll("a"))
 navBarItemsColor.forEach(elem => elem.style.color = 'green');
 
 // cta section
