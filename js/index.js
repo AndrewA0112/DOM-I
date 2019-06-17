@@ -106,4 +106,16 @@ middleImg.src = siteContent["main-content"]["middle-img-src"];
 
 // contact section
 
+let contactHeader = document.querySelector(".contact h4");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
+
+let contactAddress = document.querySelector(".contact p:nth-child(2)")
+contactAddress.textContent = siteContent["contact"]["address"];
+
+let contactPhone = document.querySelector(".contact p:nth-child(3)")
+contactPhone.textContent = siteContent["contact"]["phone"];
+
+let contactEmail = document.querySelector(".contact p:nth-child(4)")
+contactEmail.textContent = siteContent["contact"]["email"];
+
 // footer section
