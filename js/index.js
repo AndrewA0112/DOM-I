@@ -64,6 +64,44 @@ ctaButton.textContent = siteContent["cta"]["button"];
 
 // main-content section
 
+  // top-content section
+
+  let featuresHeader = document.querySelector(".top-content .text-content:nth-child(1) h4")
+  featuresHeader.textContent = siteContent["main-content"]["features-h4"];
+
+  let featuresPara = document.querySelector(".top-content .text-content:nth-child(1) p")
+  featuresPara.textContent = siteContent["main-content"]["features-content"];
+
+  let aboutHeader = document.querySelector(".top-content .text-content:nth-child(2) h4")
+  aboutHeader.textContent = siteContent["main-content"]["about-h4"];
+
+  let aboutPara = document.querySelector(".top-content .text-content:nth-child(2) p")
+  aboutPara.textContent = siteContent["main-content"]["about-content"];
+
+// middle img
+
+let middleImg = document.getElementById("middle-img");
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+  // bottom-content section
+
+  let servicesHeader = document.querySelector(".bottom-content .text-content:nth-child(1) h4")
+  servicesHeader.textContent = siteContent["main-content"]["services-h4"];
+
+  let servicesPara = document.querySelector(".bottom-content .text-content:nth-child(1) p")
+  servicesPara.textContent = siteContent["main-content"]["services-content"];
+
+  let productHeader = document.querySelector(".bottom-content .text-content:nth-child(2) h4")
+  productHeader.textContent = siteContent["main-content"]["product-h4"];
+
+  let productPara = document.querySelector(".bottom-content .text-content:nth-child(2) p")
+  productPara.textContent = siteContent["main-content"]["product-content"];
+
+  let visionHeader = document.querySelector(".bottom-content .text-content:nth-child(3) h4")
+  visionHeader.textContent = siteContent["main-content"]["vision-h4"];
+
+  let visionPara = document.querySelector(".bottom-content .text-content:nth-child(3) p")
+  visionPara.textContent = siteContent["main-content"]["vision-content"];
 
 
 // contact section
