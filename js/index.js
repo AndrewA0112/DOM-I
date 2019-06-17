@@ -46,9 +46,22 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let navLength = Object.keys(siteContent["nav"]).length
 
 for(let i = 1; i < navLength; i++){
-let navBar = document.querySelector(`nav a:nth-child(${i})`)
-navBar.textContent = siteContent["nav"][`nav-item-${i}`]
+let navBarItems = document.querySelector(`nav a:nth-child(${i})`)
+navBarItems.textContent = siteContent["nav"][`nav-item-${i}`]
 }
+
+let navBefore = document.createElement("a");
+navBefore.textContent = 'Prepend';
+
+let navAfter = document.createElement('a')
+navAfter.textContent = 'Append';
+
+let navBar = document.querySelector('nav');
+navBar.prepend(navBefore);
+navBar.append(navAfter);
+
+let navBarItemsColor = Array.from(document.querySelectorAll("a"))
+navBarItemsColor.forEach(elem => elem.style.color = 'green');
 
 // cta section
 
