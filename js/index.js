@@ -138,3 +138,5 @@ contactEmail.textContent = siteContent["contact"]["email"];
 
 let footerPara = document.querySelector("footer p");
 footerPara.textContent = siteContent["footer"]["copyright"];
+
+// Some things i learned more of where CSS selectors, but in this project i can't really use them
